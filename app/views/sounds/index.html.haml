@@ -1,0 +1,5 @@
+%ul.icon-list
+  - @sounds.each do |sound|
+    %li.item
+      %a{data: {fn: 'play-sound', rel: sound[:value]}}
+        = sound[:label]
